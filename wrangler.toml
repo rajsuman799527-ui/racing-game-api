@@ -1,0 +1,14 @@
+name = "racing-game-api"
+main = "index.js"
+compatibility_date = "2025-01-01"
+
+[[kv_namespaces]]
+binding = "USERS"
+id = "b38aabcc339d427abe836f7eb4592fd2"
+
+[durable_objects]
+bindings = [{ name = "LOBBY", class_name = "Lobby" }]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Lobby"]
